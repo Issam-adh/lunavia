@@ -1,0 +1,74 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "cli": {
+    "analytics": false
+  },
+  "projects": {
+    "lunavia": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+            "polyfills": [],
+            "tsConfig": "tsconfig.app.json",
+            "index": "src/index.html",
+            "outputPath": {
+              "base": "dist",
+              "browser": ""
+            },
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.css",
+              "src/v2.css",
+              "src/refinements.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": true,
+                "fonts": false
+              },
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "700kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "lunavia:build:production"
+            },
+            "development": {
+              "buildTarget": "lunavia:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    }
+  }
+}

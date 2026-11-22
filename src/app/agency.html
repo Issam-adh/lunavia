@@ -1,0 +1,11 @@
+<div class="agency-visit-card">
+ <div class="visit-card-top"><span><app-icon name="pin"/>TOZEUR, {{s.text('TUNISIE','تونس')}}</span><span>FR / عربي</span></div>
+ <div class="visit-brand"><app-official-brand/></div>
+ <div class="visit-card-address">
+  <p class="eyebrow">{{s.text('VOTRE AGENCE À TOZEUR','وكالتك في توزر')}}</p>
+  <h3>Lunavia<br><em>Travel & Tourism</em></h3>
+  <p>{{s.text('Ras Ettabia, Chebbia AFH','رأس الطابية، الشابية AFH')}}<br>{{s.text('Tozeur, Tunisie','توزر، تونس')}}</p>
+ </div>
+ <a class="visit-map-link" [href]="s.agencyMaps" target="_blank" rel="noopener noreferrer"><app-icon name="pin"/><span>{{s.text('Nous trouver sur Google Maps','موقعنا على خرائط Google')}}<small>{{s.text('Ouvrir l’emplacement exact de l’agence','افتح الموقع الدقيق للوكالة')}}</small></span></a>
+ <div class="visit-card-bottom"><span>{{s.text('Parlons de votre prochain départ.','لنتحدث عن رحلتك القادمة.')}}</span><app-icon name="plane"/></div>
+</div>

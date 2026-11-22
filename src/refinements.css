@@ -1,0 +1,277 @@
+/* Clearer journeys, real agency details and accessible contact controls. */
+:root{--muted:#53666f;--gold:#98713c}
+.eyebrow{color:#85622f;font-size:.8125rem}
+.section-intro,.faq-grid>div>p:not(.eyebrow),.sidebar-note{color:#52656c}
+.section-header h2,.agency-home-copy h2{line-height:1.12}
+.button:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #a97f3e;outline-offset:5px}
+.desktop-nav>a,.language-switch button,.mobile-nav a{font-size:.875rem}
+.language-switch button{min-width:38px}
+.hero-refined{min-height:690px;padding-top:20px}
+.hero-refined .hero-layout{padding-top:10px;grid-template-columns:1.04fr 1fr}
+.hero-refined h1{font-size:clamp(4.3rem,7.2vw,6.7rem);line-height:1.02;margin-bottom:28px}
+.hero-refined h1 em{color:#edcf93;font-weight:400}
+.hero-refined .hero-description{max-width:440px;line-height:1.9;color:#d8e2e6}
+.hero-refined .hero-buttons{gap:25px;flex-wrap:wrap;margin-top:30px}
+.hero-whatsapp{display:inline-flex;align-items:center;gap:10px;color:#f4f6ee;font-size:.9375rem;min-height:48px;border-bottom:1px solid #d5dfd46b;transition:color .2s,border-color .2s}
+.hero-whatsapp app-icon{width:23px;height:23px;color:#c8e7cc}
+.hero-whatsapp:hover{color:#f1d39a;border-color:#f1d39a}
+.hero-location-note{display:flex;align-items:flex-start;gap:9px;margin-top:27px;font-size:.8125rem;line-height:1.8;color:#bacdd4;max-width:420px}
+.hero-location-note app-icon{margin-top:3px;color:#e2c38e}
+.hero-refined .hero-bottom{margin-top:0}
+.hero-refined .hero-eyebrow{font-size:.8125rem;letter-spacing:.12em}
+.motion-paused *{animation-play-state:paused!important}
+.journey-refined{padding:24px 0 28px}
+.journey-refined .journey-runway{height:92px}
+.journey-refined .journey-strip-label .eyebrow{font-size:.75rem;line-height:1.8}
+.journey-refined .journey-strip-label p{font-size:2rem}
+.journey-curve{position:absolute;left:0;top:0;width:100%;height:82px;fill:none;overflow:visible}
+.journey-curve-base{stroke:#d8ddda;stroke-width:1.5;stroke-dasharray:.008 .012}
+.journey-curve-progress{stroke:#aa8245;stroke-width:2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--journey-progress,.4))}
+.journey-refined .runway-plane{left:calc(4% + var(--journey-progress,.4)*90%);top:calc(16px + var(--journey-y,8px));width:24px;height:42px;transform:translate(-50%,-50%) rotate(var(--journey-angle,90deg));filter:drop-shadow(0 4px 4px #112f4320)}
+.journey-refined .runway-origin,.journey-refined .runway-destination{top:auto;bottom:0;font-size:.75rem;color:#56686e;letter-spacing:.09em}
+.services-refined{padding-top:75px;padding-bottom:80px;background:#fff}
+.services-refined .services-grid{margin-top:15px}
+.service-card{transition:background .3s,transform .3s}
+.service-card:hover{transform:translateY(-5px);background:#f6f8f7}
+.service-card h3{font-size:1.85rem}
+.service-card p{font-size:1rem;line-height:1.85;color:#52656d}
+.service-link{font-size:.875rem;color:#7c5c2c}
+.agency-home{background:#f5f7f6}
+.agency-home-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.agency-home-copy h2{font-size:clamp(2.6rem,4.2vw,4rem);font-weight:400;margin:20px 0 27px}
+.agency-home-copy>p:not(.eyebrow){font-size:1rem;line-height:1.9;color:#52656d;margin-bottom:21px}
+.agency-home-points{display:grid;gap:15px;margin:28px 0 33px}
+.agency-home-points>span{display:flex;align-items:center;gap:12px;font-size:.9375rem;line-height:1.6}
+.agency-home-points app-icon{color:#8f6a33}
+app-agency-visit{display:block;min-width:0}
+.agency-visit-card{background:#fff;border:1px solid #ddd5c5;border-radius:8px;box-shadow:0 22px 55px #122f4309;padding:29px 34px 0;position:relative;overflow:hidden}
+.agency-visit-card:before{content:'';position:absolute;inset:8px;border:1px solid #eee9df;border-radius:4px;pointer-events:none}
+.visit-card-top{display:flex;justify-content:space-between;gap:18px;font-size:.75rem;letter-spacing:.07em;color:#675b46;position:relative}
+.visit-card-top>span:first-child{display:flex;align-items:center;gap:7px}
+.visit-brand{display:flex;justify-content:center;margin:36px 0 23px;padding-bottom:25px;border-bottom:1px dashed #d8cdb8}
+.visit-brand app-official-brand{--logo-scale:1.25}
+.visit-card-address{padding:0 4px 23px;position:relative}
+.visit-card-address .eyebrow{font-size:.75rem;margin-bottom:13px;letter-spacing:.11em}
+.visit-card-address h3{font:400 3rem/1.1 var(--serif);margin-bottom:18px}
+.visit-card-address h3 em{font-size:2rem;color:#95703b;font-weight:400}
+.visit-card-address>p:last-child{font-size:1rem;line-height:1.9;color:#52656b}
+.visit-map-link{display:flex;gap:14px;align-items:center;padding:18px 19px;background:#f0f5f2;border:1px solid #dce5df;border-radius:4px;position:relative;transition:background .2s}
+.visit-map-link:hover{background:#e5eee8}
+.visit-map-link>app-icon{font-size:1.6rem;color:#6c815c}
+.visit-map-link>span{font-size:.9375rem;font-weight:500;line-height:1.6}
+.visit-map-link small{display:block;font-size:.8125rem;font-weight:400;color:#53685e;margin-top:4px}
+.visit-card-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:22px;padding:18px 0;color:#776449;border-top:1px dashed #d8cdb8;font-size:.8125rem;position:relative}
+.visit-card-bottom app-icon{font-size:1.6rem;color:#a98246}
+.agency-direct-links{display:grid;gap:16px;margin:26px 0 30px}
+.agency-direct-links>a{display:flex;gap:12px;align-items:center;font-size:1rem;overflow-wrap:anywhere;line-height:1.7}
+.agency-direct-links app-icon{color:#92703a}
+.agency-direct-links span{min-width:0;overflow-wrap:anywhere}
+.umrah-program{background:#f5f7f5}
+.umrah-program-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.umrah-program-grid article{background:#fff;border:1px solid #e0e6df;padding:30px;border-radius:5px}
+.umrah-program-grid .service-icon{margin-bottom:20px}
+.umrah-program-grid h3{font:500 1.9rem/1.2 var(--serif);margin-bottom:15px}
+.umrah-program-grid p{font-size:1rem;line-height:1.85;color:#52656b}
+.umrah-program-footer{display:flex;gap:30px;align-items:center;justify-content:space-between;margin-top:30px}
+.umrah-program-footer p{display:flex;align-items:flex-start;gap:12px;font-size:.875rem;line-height:1.8;max-width:500px}
+.umrah-program-footer p app-icon{color:#8c6b37;margin-top:3px}
+.umrah-program-footer .button{flex-shrink:0}
+.ritual-section{background:#fff}
+.ritual-tabs>button>span:last-child{font-size:.875rem;color:#596c68}
+.ritual-source{font-size:.875rem;color:#52665f}
+.contact-page-heading{padding:48px 0 45px}
+.contact-page-heading h1{font-size:clamp(2.8rem,4.7vw,4.6rem);line-height:1.14}
+.contact-page-heading p:last-child{max-width:620px;color:#52656e}
+.contact-section{padding-top:55px}
+.channel-picker{padding:0;margin:0 0 30px;border:0;min-width:0}
+.channel-picker legend{font:500 1.65rem/1.4 var(--serif);margin-bottom:18px;padding:0}
+.channel-options{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.channel-options>button{display:flex;align-items:center;gap:12px;min-width:0;text-align:start;min-height:88px;padding:16px;border:1px solid #d5deda;border-radius:5px;background:#fff;transition:background .2s,border-color .2s,box-shadow .2s}
+.channel-options>button.selected{background:#eff6f1;border-color:#4f7866;box-shadow:0 0 0 1px #4f7866}
+.channel-options>button>app-icon{width:26px;height:26px;color:#315e4a}
+.channel-options>button>span:nth-child(2){min-width:0;flex:1}
+.channel-options strong{display:block;font-size:1rem;font-weight:500;line-height:1.5}
+.channel-options small{display:block;font-size:.8125rem;line-height:1.7;color:#52665d;margin-top:3px}
+.channel-check{width:18px;height:18px;border-radius:50%;background:#fff;border:1px solid #b3c5b9;display:flex;align-items:center;justify-content:center;flex:none}
+.channel-check app-icon{width:13px;height:13px;opacity:0}
+.selected .channel-check{color:#fff;background:#456e59;border-color:#456e59}
+.selected .channel-check app-icon{opacity:1}
+.form-field>label{font-size:.9375rem}
+.form-field>label>small{font-size:.8125rem;color:#596c73;font-weight:400;margin-inline-start:6px}
+.form-field input,.form-field textarea,.form-field .select-with-icon select{font-size:1rem}
+.form-field input::placeholder,.form-field textarea::placeholder{color:#697b80;font-size:.9375rem}
+.form-field textarea{min-height:115px}
+.form-field>small,.sidebar-note,.form-explanation{font-size:.875rem;line-height:1.75;color:#53676e}
+.form-field>small.field-error{color:#a83d32}
+.trip-options{border-top:1px solid #dfe6e2;border-bottom:1px solid #dfe6e2;margin:28px 0}
+.trip-options>summary{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:20px 0;list-style:none;cursor:pointer}
+.trip-options>summary::-webkit-details-marker{display:none}
+.trip-options>summary>span{display:flex;align-items:center;gap:10px;font-size:.9375rem}
+.trip-options>summary small{font-size:.8125rem;color:#5e6f73}
+.trip-options>summary>app-icon{transition:transform .2s}
+.trip-options[open]>summary>app-icon{transform:rotate(180deg)}
+.trip-options>.form-grid{padding:5px 0 25px}
+.prepare-button{min-width:0;font-size:.9375rem;padding:17px 23px;max-width:100%}
+.form-explanation{margin-top:17px;max-width:500px}
+.prepared-heading h2{font:500 1.9rem/1.2 var(--serif)}
+.prepared-heading h2:focus{outline:2px solid #8d6c39;outline-offset:6px}
+.prepared-message>pre{font-size:.9375rem;line-height:1.85}
+.prepared-actions>.button{font-size:.875rem;min-height:48px}
+.prepared-message>small{font-size:.875rem;line-height:1.8}
+.contact-direct h2{font-size:2.5rem;line-height:1.15;margin-bottom:25px}
+.contact-method strong{font-size:.9375rem;line-height:1.7}
+.contact-method small{font-size:.75rem;color:#52656e}
+.contact-secondary-phone{display:block;font-size:.9375rem;margin:0 0 22px;padding:8px 0;margin-inline-start:68px}
+.agency-address p{font-size:1rem;line-height:1.85}
+.agency-address .text-link{font-size:.9375rem}
+.faq-list summary{font-size:1rem;line-height:1.7}
+.faq-list details p{font-size:1rem;line-height:1.85}
+.footer-top h3,.footer-top p,.footer-top>div>a:not(.brand){font-size:.9375rem}
+.footer-bottom{font-size:.8125rem}
+.mobile-contact-bar{display:none}
+[dir=rtl] .hero-refined h1{line-height:1.35;font-size:clamp(3.3rem,5.2vw,5.2rem)}
+[dir=rtl] .hero-refined h1 em{font-style:normal}
+[dir=rtl] .hero-refined .hero-eyebrow{letter-spacing:0}
+[dir=rtl] .agency-home-copy h2{font-size:2.65rem;line-height:1.55}
+[dir=rtl] .agency-home-copy h2 em{font-style:normal}
+[dir=rtl] .umrah-program-grid h3{font:500 1.4rem/1.7 var(--sans)}
+[dir=rtl] .channel-picker legend{font:500 1.25rem/1.8 var(--sans)}
+[dir=rtl] .contact-page-heading h1{font-size:3rem;line-height:1.5}
+[dir=rtl] .contact-direct h2{font-size:1.9rem;line-height:1.8}
+@media(max-width:1100px){
+ .agency-home-grid{gap:45px}
+ .hero-refined{min-height:650px}
+ .hero-refined h1{font-size:5.5rem}
+ .hero-refined .hero-buttons{gap:17px}
+ .hero-whatsapp{font-size:.875rem}
+ .umrah-program-footer{align-items:flex-start;flex-direction:column;gap:20px}
+ .agency-visit-card{padding-inline:26px}
+ .visit-brand app-official-brand{--logo-scale:1.05}
+ .channel-options>button{padding:13px;gap:9px}
+ .channel-check{display:none}
+}
+@media(max-width:760px){
+ body{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+ .container{width:calc(100% - 40px)}
+ .site-header{height:82px}
+ .topline-inner{font-size:.75rem}
+ .hero-refined{min-height:0;padding:32px 0 22px}
+ .hero-refined .hero-layout{display:flex;padding-top:0}
+ .hero-refined .hero-copy{display:contents}
+ .hero-refined .hero-eyebrow{order:0;font-size:.75rem;letter-spacing:.07em;line-height:1.8;margin-bottom:19px}
+ .hero-refined h1{order:1;font-size:clamp(3.8rem,11vw,5.2rem);line-height:1.02;margin-bottom:22px}
+ .hero-refined .hero-description{order:2;margin:0;max-width:500px;font-size:1rem;line-height:1.85}
+ .hero-refined .hero-buttons{order:3;display:flex;gap:17px;align-items:center;margin:24px 0 0;max-width:none}
+ .hero-refined .hero-buttons .button{width:auto;font-size:.9375rem;padding:15px 20px;min-height:52px}
+ .hero-refined .hero-whatsapp{font-size:.9375rem;min-height:48px;gap:9px}
+ .hero-refined .hero-location-note{order:4;font-size:.8125rem;line-height:1.8;margin-top:19px}
+ .hero-refined .hero-layout>app-flight-scene{order:5;margin-top:4px;margin-bottom:0;height:270px}
+ .hero-refined .hero-bottom{margin-top:4px;padding-top:16px}
+ .hero-scroll-hint{font-size:.75rem;max-width:220px;line-height:1.7}
+ .motion-toggle{font-size:.75rem;flex-shrink:0;min-height:42px}
+ .journey-refined{padding:25px 0 24px}
+ .journey-refined>.container{gap:14px}
+ .journey-refined .journey-strip-label p{font-size:1.8rem}
+ .journey-refined .journey-strip-label .eyebrow{font-size:.75rem;line-height:1.8}
+ .services-refined{padding-block:55px}
+ .services-refined .section-header h2{font-size:2.6rem}
+ .section-header .eyebrow,.agency-home-copy>.eyebrow{font-size:.8125rem;line-height:1.8}
+ .service-card p{font-size:.9375rem}
+ .service-card h3{font-size:1.6rem;line-height:1.25}
+ .service-link{font-size:.875rem;line-height:1.7}
+ .service-card{padding-block:20px}
+ .agency-home-grid{grid-template-columns:1fr;gap:38px}
+ .agency-home-copy h2{font-size:2.9rem;margin:17px 0 23px}
+ .agency-home-copy>p:not(.eyebrow){font-size:1rem}
+ .agency-home-points{gap:13px;margin-block:23px 28px}
+ .agency-home-points>span{font-size:.9375rem}
+ .agency-visit-card{max-width:500px;margin-inline:auto;padding-inline:25px}
+ .visit-brand app-official-brand{--logo-scale:1.15}
+ .visit-card-top{font-size:.75rem}
+ .visit-card-address h3{font-size:2.8rem}
+ .visit-card-address h3 em{font-size:1.85rem}
+ .visit-map-link{padding:16px 13px;gap:11px}
+ .visit-map-link>span{font-size:.875rem}
+ .visit-map-link small{font-size:.8125rem}
+ .umrah-program-grid{grid-template-columns:1fr;gap:16px}
+ .umrah-program-grid article{padding:25px}
+ .umrah-program-grid h3{font-size:1.75rem}
+ .umrah-program-grid p{font-size:1rem}
+ .umrah-program-footer .button{width:100%;font-size:.9375rem}
+ .ritual-tabs>button>span:last-child{font-size:.8125rem}
+ .ritual-source{font-size:.875rem}
+ .contact-page-heading{padding:31px 0 29px}
+ .contact-page-heading h1{font-size:2.9rem;line-height:1.12}
+ .contact-page-heading .eyebrow{font-size:.8125rem;line-height:1.7}
+ .contact-page-heading p:last-child{font-size:1rem;line-height:1.8;margin-top:20px}
+ .contact-section{padding-top:32px}
+ .contact-layout{gap:38px}
+ .channel-picker{margin-bottom:26px}
+ .channel-picker legend{font-size:1.6rem;margin-bottom:17px}
+ .channel-options{gap:12px}
+ .channel-options>button{padding:15px 13px;min-height:86px;gap:10px}
+ .channel-options>button>app-icon{width:23px;height:23px}
+ .channel-options strong{font-size:.9375rem}
+ .channel-options small{font-size:.75rem;line-height:1.7}
+ .form-grid{gap:22px 16px}
+ .form-field>label{font-size:.9375rem}
+ .form-field input,.form-field textarea,.form-field .select-with-icon select{font-size:16px}
+ .form-field input::placeholder,.form-field textarea::placeholder{font-size:.875rem}
+ .form-field>small{font-size:.875rem}
+ .trip-options>summary>span{flex-wrap:wrap;gap:8px;font-size:.9375rem}
+ .prepare-button{width:100%;font-size:.9375rem}
+ .form-explanation,.sidebar-note{font-size:.875rem}
+ .contact-sidebar{padding-top:30px}
+ .contact-method strong{font-size:.9375rem}
+ .prepared-message{padding:22px}
+ .prepared-actions{flex-direction:column}
+ .prepared-actions>.button{width:100%;flex:auto;font-size:.9375rem;white-space:normal}
+ .prepared-message>pre{font-size:.875rem}
+ .floating-whatsapp{display:none}
+ .mobile-contact-bar{position:fixed;inset-inline:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:10px;background:#fffffff7;backdrop-filter:blur(12px);border-top:1px solid #dce5df;box-shadow:0 -5px 25px #102f4310;padding:10px 18px calc(10px + env(safe-area-inset-bottom,0px))}
+ .mobile-contact-bar>a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 10px;background:#112f43;color:#fff;border-radius:5px;font-size:.9375rem;font-weight:500;line-height:1.5}
+ .mobile-contact-bar>a.mobile-contact-whatsapp{background:#107c6b}
+ .mobile-contact-bar app-icon{width:21px;height:21px}
+ .mobile-contact-bar .whatsapp-icon{width:24px;height:24px}
+ .toast{bottom:calc(100px + env(safe-area-inset-bottom,0px));max-width:calc(100vw - 40px)}
+ .footer-top p,.footer-top>div>a:not(.brand){font-size:.9375rem}
+ .footer-bottom{font-size:.8125rem}
+ [dir=rtl] .hero-refined h1{font-size:clamp(3rem,10vw,4.4rem);line-height:1.35}
+ [dir=rtl] .hero-refined .hero-eyebrow{font-size:.8125rem;letter-spacing:0}
+ [dir=rtl] .agency-home-copy h2{font-size:2.15rem;line-height:1.65}
+ [dir=rtl] .contact-page-heading h1{font-size:2.3rem;line-height:1.55}
+ [dir=rtl] .services-refined .section-header h2{font-size:2rem;line-height:1.65}
+ [dir=rtl] .service-card h3{font-size:1.3rem;line-height:1.6}
+ [dir=rtl] .umrah-program-grid h3{font-size:1.3rem;line-height:1.7}
+}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.form-full{grid-column:1}.channel-check{display:none}}
+@media(max-width:390px){
+ .hero-refined .hero-buttons{align-items:stretch;flex-direction:column;gap:10px}
+ .hero-refined .hero-buttons .button{width:100%}
+ .hero-refined .hero-whatsapp{align-self:center}
+ .hero-refined h1{font-size:3.65rem}
+ .hero-refined .hero-location-note{margin-top:14px}
+ .visit-brand app-official-brand{--logo-scale:1}
+ .agency-visit-card{padding-inline:22px}
+ .visit-card-top{letter-spacing:0;font-size:.75rem}
+ .visit-card-address .eyebrow{letter-spacing:.05em}
+ .channel-options>button{padding:13px 10px;gap:8px}
+ .channel-options>button>app-icon{width:21px;height:21px}
+ .channel-options strong{font-size:.875rem}
+ .mobile-contact-bar{padding-inline:12px;gap:8px}
+ .mobile-contact-bar>a{font-size:.875rem;gap:8px}
+ .service-card h3{font-size:1.45rem}
+ [dir=rtl] .hero-refined h1{font-size:3rem}
+}
+@media(prefers-reduced-motion:reduce){
+ .service-card,.hero-whatsapp,.channel-options>button,.trip-options>summary>app-icon{transition:none}
+ .service-card:hover{transform:none}
+}
+@media(max-width:760px){
+ html{scroll-padding-top:96px;scroll-padding-bottom:calc(105px + env(safe-area-inset-bottom,0px))}
+ input,textarea,select,summary,.prepare-button,#prepared-title{scroll-margin-block:24px}
+}
+@media(max-width:760px) and (max-height:480px){
+ .site-header{position:relative;top:auto}
+ html{scroll-padding-top:16px}
+}

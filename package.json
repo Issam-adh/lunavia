@@ -1,0 +1,29 @@
+{
+  "name": "lunavia-travel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run build && node scripts/local.mjs",
+    "build": "ng build --configuration production",
+    "check": "tsc --noEmit -p tsconfig.app.json",
+    "postbuild": "node scripts/copy-route-entrypoints.mjs && node scripts/build-catalog.mjs && node scripts/build-worker.mjs",
+    "dev": "node scripts/local.mjs --preview",
+    "start:angular": "ng serve",
+    "test": "node --test server/content.test.mjs"
+  },
+  "dependencies": {
+    "@angular/common": "22.3.0",
+    "@angular/compiler": "22.3.0",
+    "@angular/core": "22.3.0",
+    "@angular/forms": "22.3.0",
+    "@angular/platform-browser": "22.3.0",
+    "@angular/router": "22.3.0",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@angular/build": "22.3.0",
+    "@angular/cli": "22.3.0",
+    "@angular/compiler-cli": "22.3.0",
+    "typescript": "~6.0.0"
+  }
+}
